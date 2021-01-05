@@ -1,8 +1,8 @@
 package models
 
 import (
+	"Gin-Template/pkg/setting"
 	"fmt"
-	"fzuPaperServer/pkg/setting"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"

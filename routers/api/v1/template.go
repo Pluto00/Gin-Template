@@ -1,8 +1,8 @@
 package v1
 
 import (
-	"fzuPaperServer/pkg/app"
-	"fzuPaperServer/pkg/e"
+	"Gin-Template/pkg/app"
+	"Gin-Template/pkg/e"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

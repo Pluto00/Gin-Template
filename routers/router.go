@@ -1,10 +1,10 @@
 package routers
 
 import (
-	_ "fzuPaperServer/docs" //这个很重要,把example替换成你的项目目录
-	"fzuPaperServer/middleware/template"
-	"fzuPaperServer/pkg/setting"
-	v1 "fzuPaperServer/routers/api/v1"
+	_ "Gin-Template/docs" //这个很重要,把example替换成你的项目目录
+	"Gin-Template/middleware/template"
+	"Gin-Template/pkg/setting"
+	v1 "Gin-Template/routers/api/v1"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"

@@ -1,8 +1,8 @@
 package app
 
 import (
-	"fzuPaperServer/models"
-	"fzuPaperServer/pkg/e"
+	"Gin-Template/models"
+	"Gin-Template/pkg/e"
 	"github.com/gin-gonic/gin"
 )
 

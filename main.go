@@ -1,11 +1,11 @@
 package main
 
 import (
+	"Gin-Template/models"
+	"Gin-Template/pkg/gredis"
+	"Gin-Template/pkg/setting"
+	"Gin-Template/routers"
 	"fmt"
-	"fzuPaperServer/models"
-	"fzuPaperServer/pkg/gredis"
-	"fzuPaperServer/pkg/setting"
-	"fzuPaperServer/routers"
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
@@ -22,9 +22,9 @@ func init() {
 	models.Setup()
 }
 
-// @title fzuPaper Server API
+// @title Gin-Template Restful API
 // @version 1.0
-// @description 福大助手历年卷 API 测试
+// @description Gin Restfule API 开发模板
 
 // @contact.name API Support
 // @contact.url https://github.com/Pluto00

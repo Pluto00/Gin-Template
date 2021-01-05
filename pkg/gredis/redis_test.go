@@ -1,8 +1,8 @@
 package gredis
 
 import (
+	"Gin-Template/pkg/setting"
 	"encoding/json"
-	"fzuPaperServer/pkg/setting"
 	"testing"
 )
 
