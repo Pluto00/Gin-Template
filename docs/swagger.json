@@ -1,8 +1,8 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "福大助手历年卷 API 测试",
-        "title": "fzuPaper Server API",
+        "description": "Gin Restfule API 开发模板",
+        "title": "Gin-Template Restful API",
         "contact": {
             "name": "API Support",
             "url": "https://github.com/Pluto00",

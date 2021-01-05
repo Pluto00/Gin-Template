@@ -14,8 +14,8 @@ info:
     email: 1834733586@qq.com
     name: API Support
     url: https://github.com/Pluto00
-  description: 福大助手历年卷 API 测试
-  title: fzuPaper Server API
+  description: Gin Restfule API 开发模板
+  title: Gin-Template Restful API
   version: "1.0"
 paths:
   /template:

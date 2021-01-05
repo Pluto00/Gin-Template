@@ -1,4 +1,4 @@
-module fzuPaperServer
+module Gin-Template
 
 go 1.13
 

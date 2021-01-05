@@ -85,8 +85,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "/api/v1",
 	Schemes:     []string{},
-	Title:       "fzuPaper Server API",
-	Description: "福大助手历年卷 API 测试",
+	Title:       "Gin-Template Restful API",
+	Description: "Gin Restfule API 开发模板",
 }
 
 type s struct{}
