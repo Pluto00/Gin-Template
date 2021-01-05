@@ -1,0 +1,38 @@
+version: '3'
+services:
+  app:
+    build: .   # 自定义镜像
+    image: "template"
+    restart: always
+    ports:
+      - "127.0.0.1:5001:8000"
+
+    environment:
+      GIN_MODE: "debug"
+
+    links:
+      - redis:redis
+      - mysql:mysql
+    depends_on:
+      - redis
+      - mysql
+
+  redis:
+    image: "redis"
+    command: redis-server --appendonly yes
+    volumes:
+      - ./data/redis:/data  # 数据目录
+  
+  mysql:
+    image: "mysql"
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password    
+    environment:
+      MYSQL_ROOT_PASSWORD: template   # root 账户密码
+      MYSQL_DATABASE: template   # mysql 数据库名称
+
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+        

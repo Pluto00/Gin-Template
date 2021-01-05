@@ -1,0 +1,36 @@
+basePath: /api/v1
+definitions:
+  models.Message:
+    properties:
+      code:
+        type: integer
+      data:
+        type: object
+      msg:
+        type: string
+    type: object
+info:
+  contact:
+    email: 1834733586@qq.com
+    name: API Support
+    url: https://github.com/Pluto00
+  description: 福大助手历年卷 API 测试
+  title: fzuPaper Server API
+  version: "1.0"
+paths:
+  /template:
+    get:
+      consumes:
+      - application/json
+      description: 路由模板
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Message'
+      summary: Router Template
+      tags:
+      - Template
+swagger: "2.0"
